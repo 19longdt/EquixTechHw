@@ -13,3 +13,15 @@ security:
 logging:
   level:
     root: debug
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
+    tagsSorter: alpha
+    display-request-duration: true
+
+app:
+  version: ${app:version:1.0.0}
