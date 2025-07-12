@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: homework
+security:
+  admin:
+    username: admin
+    password: 111qqq
+  default:
+    username: user
+    password: 111222
