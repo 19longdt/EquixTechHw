@@ -1,5 +1,7 @@
-package equix.tech.homework.config;
+package equix.tech.homework.config.security;
 
+import equix.tech.homework.config.exception.CustomAccessDeniedHandler;
+import equix.tech.homework.config.exception.CustomAuthenticationEntryPoint;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -31,13 +33,17 @@ public class SecurityConfig {
     private String defaultPass;
 
     @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+    public SecurityFilterChain securityFilterChain(HttpSecurity http, CustomAuthenticationEntryPoint entryPoint, CustomAccessDeniedHandler accessDeniedHandler) throws Exception {
         http
             .csrf(AbstractHttpConfigurer::disable)
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/api/admin/**").hasRole("ADMIN")
+                .requestMatchers("/api/orders/simulate-execution").hasRole("ADMIN")
                 .requestMatchers("/api/orders/**").authenticated()
                 .anyRequest().authenticated()
+            )
+            .exceptionHandling(ex -> ex
+                .authenticationEntryPoint(entryPoint)
+                .accessDeniedHandler(accessDeniedHandler)
             )
             .httpBasic(Customizer.withDefaults());
         return http.build();

@@ -10,3 +10,6 @@ security:
   default:
     username: user
     password: 111222
+logging:
+  level:
+    root: debug
