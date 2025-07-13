@@ -44,6 +44,12 @@ public class OrderController {
         return ResponseEntity.status(HttpStatus.OK).body(orderService.getOrderById(id));
     }
 
+    @PostMapping("/orders/{id}/cancel")
+    public ResponseEntity<CommonResponse> cancelOrder(@NotNull @PathVariable Long id) {
+        log.debug("[Cancel] request id {}", id);
+        return ResponseEntity.status(HttpStatus.OK).body(orderService.cancelOrder(id));
+    }
+
     @PostMapping("/orders-paging")
     public ResponseEntity<CommonResponse> getOrders(@Valid @RequestBody PageRequest request) {
         log.debug("[GetPaging] request {}", Utils.toJsonString(request));

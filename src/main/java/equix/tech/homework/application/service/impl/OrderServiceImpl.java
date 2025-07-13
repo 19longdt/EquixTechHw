@@ -97,7 +97,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
-    public synchronized void cancelOrder(Long id) {
+    public synchronized CommonResponse cancelOrder(Long id) {
         Order order = findOrThrow(id);
         if (!Objects.equals(order.getStatus(), OrderStatus.PENDING)) {
             throw new InvalidException(ORDER_INVALID_STATE);
@@ -105,5 +105,6 @@ public class OrderServiceImpl implements OrderService {
         order.setStatus(OrderStatus.CANCELLED);
         log.debug("[Cancel] result: {}", Utils.toJsonString(order));
         orderRepository.update(List.of(order));
+        return new CommonResponse(ORDER_CANCELED, SUCCESS, convertToResponse(order), 1);
     }
 }

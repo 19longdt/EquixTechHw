@@ -13,5 +13,5 @@ public interface OrderService {
 
     CommonResponse getOrderById(Long id);
 
-    void cancelOrder(Long id);
+    CommonResponse cancelOrder(Long id);
 }
