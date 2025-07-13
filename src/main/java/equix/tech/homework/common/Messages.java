@@ -6,6 +6,9 @@ public class Messages {
     public static final String FAILED = "Fail";
 
     // validation
+    public static final String INVALID_PAGE = "Page must be >= 0";
+    public static final String INVALID_SIZE = "Size must be >= 1";
+
     public static final String SYMBOL_REQUIRED = "Symbol is required.";
     public static final String SYMBOL_FORMAT_INVALID = "Symbol must be uppercase letters (max 10 characters).";
 
@@ -23,6 +26,9 @@ public class Messages {
 
     // success
     public static final String SIMULATE_EXECUTION = "Simulate execution handled";
+    public static final String ORDER_GET_ALL = "All Orders";
+    public static final String ORDER_GET_PAGING = "Paging Orders";
+    public static final String ORDER_GET_DETAIL = "Detail Order";
     public static final String ORDER_CREATE = "Order handling";
     public static final String ORDER_CANCELED = "Order canceled.";
 }

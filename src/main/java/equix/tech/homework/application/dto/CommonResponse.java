@@ -19,4 +19,12 @@ public class CommonResponse {
         this.reason = reason;
         this.status = status;
     }
+
+    public CommonResponse(Object message, String reason, Object data, Integer count) {
+        this.message = message;
+        this.reason = reason;
+        this.status = Boolean.TRUE;
+        this.data = data;
+        this.count = count;
+    }
 }

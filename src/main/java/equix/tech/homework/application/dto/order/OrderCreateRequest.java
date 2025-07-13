@@ -2,6 +2,7 @@ package equix.tech.homework.application.dto.order;
 
 import equix.tech.homework.domain.enums.OrderSide;
 import jakarta.validation.constraints.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -15,6 +16,7 @@ import static equix.tech.homework.common.Messages.*;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 public class OrderCreateRequest implements Serializable {
     @NotBlank(message = SYMBOL_REQUIRED)
     @Pattern(regexp = "^[A-Z]{1,10}$", message = SYMBOL_FORMAT_INVALID)
