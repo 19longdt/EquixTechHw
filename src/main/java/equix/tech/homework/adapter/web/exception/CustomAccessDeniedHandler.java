@@ -1,7 +1,7 @@
-package equix.tech.homework.config.exception;
+package equix.tech.homework.adapter.web.exception;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import equix.tech.homework.application.dto.CommonResponse;
+import equix.tech.homework.adapter.dto.CommonResponse;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

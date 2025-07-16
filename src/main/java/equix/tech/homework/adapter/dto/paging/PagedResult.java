@@ -1,4 +1,4 @@
-package equix.tech.homework.application.dto.paging;
+package equix.tech.homework.adapter.dto.paging;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

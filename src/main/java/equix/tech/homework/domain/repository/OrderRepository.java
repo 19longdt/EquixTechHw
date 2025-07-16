@@ -1,7 +1,7 @@
 package equix.tech.homework.domain.repository;
 
-import equix.tech.homework.application.dto.paging.PageRequest;
-import equix.tech.homework.application.dto.paging.PagedResult;
+import equix.tech.homework.adapter.dto.paging.PageRequest;
+import equix.tech.homework.adapter.dto.paging.PagedResult;
 import equix.tech.homework.domain.model.Order;
 
 import java.util.List;

@@ -1,7 +1,7 @@
-package equix.tech.homework.config.security;
+package equix.tech.homework.infrastructure.config.security;
 
-import equix.tech.homework.config.exception.CustomAccessDeniedHandler;
-import equix.tech.homework.config.exception.CustomAuthenticationEntryPoint;
+import equix.tech.homework.adapter.web.exception.CustomAccessDeniedHandler;
+import equix.tech.homework.adapter.web.exception.CustomAuthenticationEntryPoint;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

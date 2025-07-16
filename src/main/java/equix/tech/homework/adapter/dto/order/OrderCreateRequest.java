@@ -1,4 +1,4 @@
-package equix.tech.homework.application.dto.order;
+package equix.tech.homework.adapter.dto.order;
 
 import equix.tech.homework.domain.enums.OrderSide;
 import jakarta.validation.constraints.*;

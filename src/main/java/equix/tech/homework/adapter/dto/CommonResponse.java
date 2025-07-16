@@ -1,4 +1,4 @@
-package equix.tech.homework.application.dto;
+package equix.tech.homework.adapter.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

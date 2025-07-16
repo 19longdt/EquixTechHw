@@ -1,4 +1,4 @@
-package equix.tech.homework.application.dto.order;
+package equix.tech.homework.adapter.dto.order;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import equix.tech.homework.common.Constants;

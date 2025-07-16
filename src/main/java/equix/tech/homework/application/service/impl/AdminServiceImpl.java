@@ -1,6 +1,6 @@
 package equix.tech.homework.application.service.impl;
 
-import equix.tech.homework.application.exception.NotFoundException;
+import equix.tech.homework.domain.exception.NotFoundException;
 import equix.tech.homework.application.service.AdminService;
 import equix.tech.homework.common.Utils;
 import equix.tech.homework.domain.enums.OrderStatus;

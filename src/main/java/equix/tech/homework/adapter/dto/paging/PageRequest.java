@@ -1,4 +1,4 @@
-package equix.tech.homework.application.dto.paging;
+package equix.tech.homework.adapter.dto.paging;
 
 import equix.tech.homework.common.Messages;
 import jakarta.validation.constraints.Min;

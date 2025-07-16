@@ -1,8 +1,8 @@
 package equix.tech.homework.application.service;
 
-import equix.tech.homework.application.dto.CommonResponse;
-import equix.tech.homework.application.dto.paging.PageRequest;
-import equix.tech.homework.application.dto.order.OrderCreateRequest;
+import equix.tech.homework.adapter.dto.CommonResponse;
+import equix.tech.homework.adapter.dto.paging.PageRequest;
+import equix.tech.homework.adapter.dto.order.OrderCreateRequest;
 
 public interface OrderService {
     CommonResponse createOrder(OrderCreateRequest request);

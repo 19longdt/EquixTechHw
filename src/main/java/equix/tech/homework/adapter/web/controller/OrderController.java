@@ -1,8 +1,8 @@
-package equix.tech.homework.controller;
+package equix.tech.homework.adapter.web.controller;
 
-import equix.tech.homework.application.dto.CommonResponse;
-import equix.tech.homework.application.dto.paging.PageRequest;
-import equix.tech.homework.application.dto.order.OrderCreateRequest;
+import equix.tech.homework.adapter.dto.CommonResponse;
+import equix.tech.homework.adapter.dto.paging.PageRequest;
+import equix.tech.homework.adapter.dto.order.OrderCreateRequest;
 import equix.tech.homework.application.service.OrderService;
 import equix.tech.homework.common.Utils;
 import jakarta.validation.Valid;

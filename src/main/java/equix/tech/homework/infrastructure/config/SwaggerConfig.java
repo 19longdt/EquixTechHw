@@ -1,4 +1,4 @@
-package equix.tech.homework.config;
+package equix.tech.homework.infrastructure.config;
 
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;

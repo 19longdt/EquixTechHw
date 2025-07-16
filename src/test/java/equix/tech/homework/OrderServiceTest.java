@@ -1,11 +1,11 @@
 package equix.tech.homework;
 
-import equix.tech.homework.application.dto.CommonResponse;
-import equix.tech.homework.application.dto.order.OrderCreateRequest;
-import equix.tech.homework.application.dto.order.OrderResponse;
-import equix.tech.homework.application.dto.paging.PageRequest;
-import equix.tech.homework.application.exception.InvalidException;
-import equix.tech.homework.application.exception.NotFoundException;
+import equix.tech.homework.adapter.dto.CommonResponse;
+import equix.tech.homework.adapter.dto.order.OrderCreateRequest;
+import equix.tech.homework.adapter.dto.order.OrderResponse;
+import equix.tech.homework.adapter.dto.paging.PageRequest;
+import equix.tech.homework.domain.exception.InvalidException;
+import equix.tech.homework.domain.exception.NotFoundException;
 import equix.tech.homework.application.service.AdminService;
 import equix.tech.homework.application.service.OrderService;
 import equix.tech.homework.application.service.impl.AdminServiceImpl;

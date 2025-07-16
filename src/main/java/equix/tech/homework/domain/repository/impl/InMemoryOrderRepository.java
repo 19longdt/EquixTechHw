@@ -1,8 +1,8 @@
 package equix.tech.homework.domain.repository.impl;
 
 
-import equix.tech.homework.application.dto.paging.PageRequest;
-import equix.tech.homework.application.dto.paging.PagedResult;
+import equix.tech.homework.adapter.dto.paging.PageRequest;
+import equix.tech.homework.adapter.dto.paging.PagedResult;
 import equix.tech.homework.domain.model.Order;
 import equix.tech.homework.domain.repository.OrderRepository;
 import org.springframework.stereotype.Repository;
@@ -10,7 +10,6 @@ import org.springframework.stereotype.Repository;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
-import java.util.stream.Collectors;
 
 @Repository
 public class InMemoryOrderRepository implements OrderRepository {

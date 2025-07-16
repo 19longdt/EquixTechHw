@@ -1,9 +1,9 @@
-package equix.tech.homework.config.exception;
+package equix.tech.homework.adapter.web.exception;
 
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
-import equix.tech.homework.application.dto.CommonResponse;
-import equix.tech.homework.application.exception.InvalidException;
-import equix.tech.homework.application.exception.NotFoundException;
+import equix.tech.homework.adapter.dto.CommonResponse;
+import equix.tech.homework.domain.exception.InvalidException;
+import equix.tech.homework.domain.exception.NotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;

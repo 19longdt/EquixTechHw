@@ -1,6 +1,6 @@
-package equix.tech.homework.controller;
+package equix.tech.homework.adapter.web.controller;
 
-import equix.tech.homework.application.dto.CommonResponse;
+import equix.tech.homework.adapter.dto.CommonResponse;
 import equix.tech.homework.application.service.AdminService;
 import equix.tech.homework.common.Messages;
 import org.slf4j.Logger;
